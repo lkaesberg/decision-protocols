@@ -9,8 +9,8 @@
     "input_json_file_path": "data/datasets/<DATASET NAME>.json",
     "concurrent_api_requests": 200,
     "num_samples": <SAMPLES FOR DATASET>,
-    "max_turns": 10,
-    "response_generator":"simple",
+    "max_turns": 15,
+    "response_generator": "simple",
     "visible_turns_in_memory": 10,
     "decision_protocol": "simple_voting"
   },
