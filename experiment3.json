@@ -1,0 +1,60 @@
+{
+  "repeats": 3,
+  "name": "<DATASET NAME>",
+  "common": {
+    "task_instruction_prompt_template": "<DATASET NAME>",
+    "endpoint_url": "<LLM API HOSTNAME>",
+    "api_key": "<LLM API KEY>",
+    "model_name": "<MODEL NAME>",
+    "input_json_file_path": "data/datasets/<DATASET NAME>.json",
+    "concurrent_api_requests": 200,
+    "num_samples": <SAMPLES FOR DATASET>,
+    "max_turns": 5,
+    "response_generator": <simple, critical, reasoning>,
+    "discussion_paradigm": <memory, collective_refinement>,
+    "all_agents_generate_first_draft": <true, false>
+  },
+  "runs": [
+    {
+      "output_json_file_path": "results/baseline-cot.json",
+      "use_baseline": true
+    },
+    {
+      "output_json_file_path": "results/baseline.json",
+      "use_baseline": true,
+      "use_chain_of_thought": false
+    },
+    {
+      "output_json_file_path": "results/approval.json",
+      "decision_protocol": "approval_voting"
+    },
+    {
+      "output_json_file_path": "results/cumulative.json",
+      "decision_protocol": "cumulative_voting"
+    },
+    {
+      "output_json_file_path": "results/hybrid_consensus.json",
+      "decision_protocol": "hybrid_consensus"
+    },
+    {
+      "output_json_file_path": "results/majority_consensus.json",
+      "decision_protocol": "majority_consensus"
+    },
+    {
+      "output_json_file_path": "results/supermajority_consensus.json",
+      "decision_protocol": "supermajority_consensus"
+    },
+    {
+      "output_json_file_path": "results/unanimity_consensus.json",
+      "decision_protocol": "unanimity_consensus"
+    },
+    {
+      "output_json_file_path": "results/voting.json",
+      "decision_protocol": "simple_voting"
+    },
+    {
+      "output_json_file_path": "results/ranked.json",
+      "decision_protocol": "ranked_voting"
+    }
+  ]
+}
