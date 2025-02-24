@@ -1,0 +1,60 @@
+{
+  "repeats": 3,
+  "name": "<DATASET NAME>",
+  "common": {
+    "task_instruction_prompt_template": "<DATASET NAME>",
+    "endpoint_url": "<LLM API HOSTNAME>",
+    "api_key": "<LLM API KEY>",
+    "model_name": "<MODEL NAME>",
+    "input_json_file_path": "data/datasets/<DATASET NAME>.json",
+    "concurrent_api_requests": 200,
+    "num_samples": <SAMPLES FOR DATASET>,
+    "max_turns": 10,
+    "response_generator":"simple",
+    "visible_turns_in_memory": 10,
+    "decision_protocol": "simple_voting",
+    "all_agents_generate_first_draft": true
+  },
+  "runs": [
+    {
+      "output_json_file_path": "results/agents1.json",
+      "num_agents": 1
+    },
+    {
+      "output_json_file_path": "results/agents2.json",
+      "num_agents": 2
+    },
+    {
+      "output_json_file_path": "results/agents3.json",
+      "num_agents": 3
+    },
+    {
+      "output_json_file_path": "results/agents4.json",
+      "num_agents": 4
+    },
+    {
+      "output_json_file_path": "results/agents5.json",
+      "num_agents": 5
+    },
+    {
+      "output_json_file_path": "results/agents6.json",
+      "num_agents": 6
+    },
+    {
+      "output_json_file_path": "results/agents7.json",
+      "num_agents": 7
+    },
+    {
+      "output_json_file_path": "results/agents8.json",
+      "num_agents": 8
+    },
+    {
+      "output_json_file_path": "results/agents9.json",
+      "num_agents": 9
+    },
+    {
+      "output_json_file_path": "results/agents10.json",
+      "num_agents": 10
+    }
+  ]
+}
