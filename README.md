@@ -69,7 +69,7 @@ TODO: added after release
 ---
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under [Apache 2.0](LICENSE).
 
 ---
 
