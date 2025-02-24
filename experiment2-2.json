@@ -1,0 +1,59 @@
+{
+  "repeats": 3,
+  "name": "<DATASET NAME>",
+  "common": {
+    "task_instruction_prompt_template": "<DATASET NAME>",
+    "endpoint_url": "<LLM API HOSTNAME>",
+    "api_key": "<LLM API KEY>",
+    "model_name": "<MODEL NAME>",
+    "input_json_file_path": "data/datasets/<DATASET NAME>.json",
+    "concurrent_api_requests": 200,
+    "num_samples": <SAMPLES FOR DATASET>,
+    "max_turns": 10,
+    "response_generator":"simple",
+    "visible_turns_in_memory": 10,
+    "decision_protocol": "simple_voting"
+  },
+  "runs": [
+    {
+      "output_json_file_path": "results/voteturn1.json",
+      "voting_protocols_vote_turn": 1
+    },
+    {
+      "output_json_file_path": "results/voteturn2.json",
+      "voting_protocols_vote_turn": 2
+    },
+    {
+      "output_json_file_path": "results/voteturn3.json",
+      "voting_protocols_vote_turn": 3
+    },
+    {
+      "output_json_file_path": "results/voteturn4.json",
+      "voting_protocols_vote_turn": 4
+    },
+    {
+      "output_json_file_path": "results/voteturn5.json",
+      "voting_protocols_vote_turn": 5
+    },
+    {
+      "output_json_file_path": "results/voteturn6.json",
+      "voting_protocols_vote_turn": 6
+    },
+    {
+      "output_json_file_path": "results/voteturn7.json",
+      "voting_protocols_vote_turn": 7
+    },
+    {
+      "output_json_file_path": "results/voteturn8.json",
+      "voting_protocols_vote_turn": 8
+    },
+    {
+      "output_json_file_path": "results/voteturn9.json",
+      "voting_protocols_vote_turn": 9
+    },
+    {
+      "output_json_file_path": "results/voteturn10.json",
+      "voting_protocols_vote_turn": 10
+    }
+  ]
+}
