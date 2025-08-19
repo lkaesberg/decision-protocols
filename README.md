@@ -63,7 +63,27 @@ While humans have long relied on collaboration to solve complex problems, **deci
 If you find this work helpful, please consider citing:
 
 ```
-TODO: added after release
+@inproceedings{kaesberg-etal-2025-voting,
+    title = "Voting or Consensus? Decision-Making in Multi-Agent Debate",
+    author = "Kaesberg, Lars Benedikt  and
+      Becker, Jonas  and
+      Wahle, Jan Philip  and
+      Ruas, Terry  and
+      Gipp, Bela",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.606/",
+    doi = "10.18653/v1/2025.findings-acl.606",
+    pages = "11640--11671",
+    ISBN = "979-8-89176-256-5"
+}
 ```
 
 ---
